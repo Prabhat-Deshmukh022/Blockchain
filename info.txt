@@ -1,0 +1,30 @@
+bit-mix, chip-mixer, wasabi, shapeshift
+
+Mixers -
+
+Q-1:    What are Mixers?
+A:      Mixers are services which are primarily used to provide privacy in cryptocurrency transactions
+
+Q-2:    How do they work?
+A:      Mixers, as the name suggest, mix information and amounts from various different transactions and provide the end 
+        output as a result of "mixing" amounts from different transactions. These groups of transactions which are involved
+        in mixing together can be called "tumblers".
+
+This helps in obfuscating the original sender's identity.
+
+Q-3    Why are we decoding mixers?
+A:     The mixing services provide a final transaction id by mixing various other transactions in the tumbler, in some cases,
+       the mixing service may extort or claim some of the cryptocurrency, and there would be no way to identify and trace it back
+       because of the mixing mechanism.
+
+Q-4    How are we decoding mixers?
+A:     We start out with a bunch of transactions, which we call as seed transactions. We follow these transactions into the tumbler
+       that they will be used in, and color all the other transactions involved there, these are called anonimity sets.
+
+       We follow these transactions further to identify more anonimity sets, by coloring other tumblers which take the initial ones
+       as input, we also color other inputs to the same tumbler.
+
+       In this process, we can identify a pattern  
+
+
+$env:VariableName = "NewValue"
